@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+.todo-row {
+    margin: 10px 0px;
+    border: 2px solid rgb(6, 169, 66);
+    background-color : white
+}
+
+input {
+    width: 100%;
+}
+
