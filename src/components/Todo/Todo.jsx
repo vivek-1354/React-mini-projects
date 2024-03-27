@@ -27,7 +27,7 @@ const Todo = () => {
                 <TodoForm />
                 <br />
                 <div className="container text-center">
-                    {allTodos && <TodoItems />}
+                    {allTodos.length > 0 ? <TodoItems /> : <h2><i>Enjoy your day.</i></h2>}
                 </div>
             </center>
         </TodoContext.Provider>
