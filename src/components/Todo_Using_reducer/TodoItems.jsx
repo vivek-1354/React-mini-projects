@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import TodoContext from "../../context/TodoContext";
+import { TodoContext } from "../../context/TodoContext";
 
 
 // eslint-disable-next-line react/prop-types
@@ -21,9 +21,9 @@ const TodoItem = ({ name, time, onDelete }) => {
 const TodoItems = () => {
     const { allTodos, handleDelete } = useContext(TodoContext)
     return (
-        <>
-            {allTodos.map((todo) => <TodoItem key={todo.toDoName} name={todo.toDoName} time={todo.toDoDate} onDelete={handleDelete} />)}
-        </>
+        <div className="container text-center">
+            {allTodos.length > 0 ? allTodos.map((todo) => <TodoItem key={todo.toDoName} name={todo.toDoName} time={todo.toDoDate} onDelete={handleDelete} />) : <h2><i>Enjoy your day.</i></h2>}
+        </div>
     );
 };
 

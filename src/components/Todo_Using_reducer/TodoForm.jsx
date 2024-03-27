@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
-import TodoContext from '../../context/TodoContext'
+import { TodoContext } from '../../context/TodoContext'
 
 const TodoForm = () => {
     const [toDo, settoDo] = React.useState({
